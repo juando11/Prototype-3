@@ -545,7 +545,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &868375067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -558,7 +558,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 348db7f6c23b14670824e0c898e117a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 1457592126387177000, guid: 74e299c6e5f5144d4ba078a6ed4b64d1, type: 3}
+  obstaclePrefab:
+  - {fileID: 5261243757076542431, guid: 8d025fab9173f4549ab2f81f9cf49e65, type: 3}
+  - {fileID: 1457592126387177000, guid: 74e299c6e5f5144d4ba078a6ed4b64d1, type: 3}
+  - {fileID: 151096, guid: 367149bd17c4d4d4e8868ec6a5cf8d45, type: 3}
+  - {fileID: 114304, guid: 3daef342e8f3f9548b04424eac7d4d0d, type: 3}
 --- !u!114 &868375068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,14 +736,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86fcb9782f2dd4fddb82e5a254e4a10a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 35
-  gravityModifier: 10
+  jumpForce: 25
+  gravityModifier: 5
   isOnGround: 1
   gameOver: 0
   explosionParticle: {fileID: 802526952}
   dirtParticle: {fileID: 479022723}
-  jumpSound: {fileID: 0}
-  crashSound: {fileID: 0}
+  jumpSound: {fileID: 8300000, guid: 113ee460fadc340e4957a7404a9fbb27, type: 3}
+  crashSound: {fileID: 8300000, guid: 4bcde6de2166e41e284ec46d8a01fb90, type: 3}
+  maxJumps: 2
+  dash: 0
 --- !u!1001 &1340530808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,7 +759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: f8abbdd178867d2419ba9feb6ff2cba0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -951,7 +957,7 @@ Transform:
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2117267298
 PrefabInstance:
